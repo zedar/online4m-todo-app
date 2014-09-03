@@ -1,0 +1,379 @@
+{
+  "@class": "pl.bpm4cloud.gui.definition.GuiDefWrapper",
+  "TODOFRM": {
+    "controlType": "form",
+    "@class": "pl.bpm4cloud.gui.component.def.FormDef",
+    "id": "GDForm_22",
+    "codeName": "TODOFRM",
+    "cssClass": "form-horizontal",
+    "children": {
+      "TODOGRID": {
+        "controlType": "tbgrid",
+        "@class": "pl.bpm4cloud.gui.component.def.GridDef",
+        "id": "GDTBGrid_27",
+        "codeName": "TODOGRID",
+        "cssClass": "tbg-container",
+        "children": {
+          "GDTBGridRow_320": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_320",
+            "codeName": "GDTBGridRow_320",
+            "cssClass": "row underline-bottom underline-top",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_325": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_325",
+                "codeName": "GDTBGridCol_325",
+                "cssClass": "span2 offset1",
+                "children": {
+                  "GDTBTypographyBox_46": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_46",
+                    "codeName": "GDTBTypographyBox_46",
+                    "text": "ToDo List: ",
+                    "cssClass": "pull-right",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "3",
+                    "paragraph": false
+                  }
+                }
+              },
+              "GDTBGridCol_329": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_329",
+                "codeName": "GDTBGridCol_329",
+                "cssClass": "span5",
+                "children": {
+                  "TODOLISTNAME": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_35",
+                    "codeName": "TODOLISTNAME",
+                    "label": "ToDo List Name",
+                    "cssClass": "input-block-level",
+                    "controlGroupCssClass": "control-group no-label",
+                    "pattern": "",
+                    "enabled": true,
+                    "taskListColumn": true,
+                    "tooltip": "",
+                    "modelCodeName": "TODOLISTNAME",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "TODOLISTNAME"
+                  }
+                }
+              }
+            }
+          },
+          "ROWNEWTODO": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_30",
+            "codeName": "ROWNEWTODO",
+            "cssClass": "row underline-bottom",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_265": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_265",
+                "codeName": "GDTBGridCol_265",
+                "cssClass": "span2 offset1",
+                "children": {
+                  "NEWTODOTITLE": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.ParagraphDef",
+                    "id": "GDTBTypographyBox_278",
+                    "codeName": "NEWTODOTITLE",
+                    "text": "Enter new todo:",
+                    "cssClass": "pull-left-smartphone-right-otherwise",
+                    "paragraphCssClass": "",
+                    "heading": false,
+                    "strength": "1",
+                    "paragraph": true
+                  }
+                }
+              },
+              "GDTBGridCol_35": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_35",
+                "codeName": "GDTBGridCol_35",
+                "cssClass": "span5",
+                "children": {
+                  "NEWTODO": {
+                    "controlType": "tbtextarea",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextAreaInputDef",
+                    "id": "GDTBTextArea_54",
+                    "codeName": "NEWTODO",
+                    "label": "Enter new todo:",
+                    "cssClass": "input-block-level",
+                    "controlGroupCssClass": "control-group no-label",
+                    "rows": "2",
+                    "enabled": true,
+                    "tooltip": "",
+                    "modelCodeName": "NEWTODO",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "NEWTODO"
+                  }
+                }
+              },
+              "GDTBGridCol_317": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_317",
+                "codeName": "GDTBGridCol_317",
+                "cssClass": "span2",
+                "children": {
+                  "BTNADDTODO": {
+                    "controlType": "tbbutton",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                    "id": "GDTBButton_206",
+                    "codeName": "BTNADDTODO",
+                    "label": "Add todo",
+                    "cssClass": "btn btn-primary pull-right-smartphone-left-otherwise",
+                    "iconClass": "",
+                    "tooltip": ""
+                  }
+                }
+              }
+            }
+          },
+          "ROWTODOLIST": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_40",
+            "codeName": "ROWTODOLIST",
+            "cssClass": "row",
+            "collectionType": "LIST",
+            "children": {
+              "TODOITEMCOMPLETED": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_91",
+                "codeName": "TODOITEMCOMPLETED",
+                "cssClass": "span2 offset1",
+                "children": {
+                  "TODOITEMCHECK": {
+                    "controlType": "tbcheckbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CheckBoxGroupDef",
+                    "id": "GDTBCheckBox_113",
+                    "codeName": "TODOITEMCHECK",
+                    "label": "Checkbox group label",
+                    "dictionary": {
+                      "1": ""
+                    },
+                    "cssClass": "",
+                    "controlGroupCssClass": "control-group no-label pull-left-smartphone-right-otherwise",
+                    "groupName": "",
+                    "enabled": true,
+                    "tooltip": "",
+                    "modelCodeName": "TODOITEMCHECK",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "TODOITEMCHECK",
+                    "children": {}
+                  }
+                }
+              },
+              "COLTODOITEM": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_150",
+                "codeName": "COLTODOITEM",
+                "cssClass": "span5",
+                "children": {
+                  "TODOITEM": {
+                    "controlType": "tbtextarea",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextAreaInputDef",
+                    "id": "GDTBTextArea_127",
+                    "codeName": "TODOITEM",
+                    "label": "Text area label",
+                    "cssClass": "input-block-level",
+                    "controlGroupCssClass": "control-group no-label",
+                    "rows": "2",
+                    "enabled": true,
+                    "tooltip": "",
+                    "modelCodeName": "TODOITEM",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "TODOITEM"
+                  }
+                }
+              },
+              "GDTBGridCol_292": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_292",
+                "codeName": "GDTBGridCol_292",
+                "cssClass": "span2",
+                "children": {
+                  "BTNTODOREMOVE": {
+                    "controlType": "tbbutton",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                    "id": "GDTBButton_199",
+                    "codeName": "BTNTODOREMOVE",
+                    "label": "Remove",
+                    "cssClass": "btn btn-danger pull-right-smartphone-left-otherwise",
+                    "iconClass": "",
+                    "tooltip": ""
+                  }
+                }
+              }
+            }
+          },
+          "ROWTODOSUMMARY": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_219",
+            "codeName": "ROWTODOSUMMARY",
+            "cssClass": "row underline-top",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_226": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_226",
+                "codeName": "GDTBGridCol_226",
+                "cssClass": "span2 offset1",
+                "children": {
+                  "TODOITEMLEFT": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_229",
+                    "codeName": "TODOITEMLEFT",
+                    "text": "0 items left",
+                    "cssClass": "pull-right",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "4",
+                    "paragraph": false
+                  }
+                }
+              },
+              "GDTBGridCol_237": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_237",
+                "codeName": "GDTBGridCol_237",
+                "cssClass": "span5",
+                "children": {
+                  "TODOITEMACTIVE": {
+                    "controlType": "tbradiobox",
+                    "@class": "pl.bpm4cloud.gui.component.def.RadioBoxGroupDef",
+                    "id": "GDTBRadioBox_83",
+                    "codeName": "TODOITEMACTIVE",
+                    "label": "Radio group label",
+                    "dictionary": {
+                      "L": "All",
+                      "A": "Active",
+                      "C": "Completed"
+                    },
+                    "cssClass": "inline",
+                    "controlGroupCssClass": "control-group no-label pull-left",
+                    "groupName": "",
+                    "enabled": true,
+                    "tooltip": "",
+                    "modelCodeName": "TODOITEMACTIVE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "TODOITEMACTIVE"
+                  }
+                }
+              },
+              "GDTBGridCol_242": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_242",
+                "codeName": "GDTBGridCol_242",
+                "cssClass": "span2",
+                "children": {
+                  "BTNCLEARCOMPLETED": {
+                    "controlType": "tbbutton",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                    "id": "GDTBButton_251",
+                    "codeName": "BTNCLEARCOMPLETED",
+                    "label": "Clear completed",
+                    "cssClass": "btn-small btn-inverse pull-right-smartphone-left-otherwise",
+                    "iconClass": "",
+                    "tooltip": ""
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_328": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_328",
+            "codeName": "GDTBGridRow_328",
+            "cssClass": "row",
+            "collectionType": "NONE",
+            "children": {
+              "GDTBGridCol_333": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_333",
+                "codeName": "GDTBGridCol_333",
+                "cssClass": "span9 offset1",
+                "children": {
+                  "GDTBButtonGroup_336": {
+                    "controlType": "tbbuttongroup",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonGroupDef",
+                    "id": "GDTBButtonGroup_336",
+                    "codeName": "GDTBButtonGroup_336",
+                    "cssClass": "form-actions",
+                    "children": {
+                      "BTNSAVELIST": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_347",
+                        "codeName": "BTNSAVELIST",
+                        "label": "Save ToDo List",
+                        "cssClass": "btn-large btn-primary",
+                        "iconClass": "",
+                        "tooltip": ""
+                      },
+                      "BTNBACKTOEDIT": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_939",
+                        "codeName": "BTNBACKTOEDIT",
+                        "label": "Back to edit ToDo List",
+                        "cssClass": "btn-large btn-primary",
+                        "iconClass": "",
+                        "tooltip": ""
+                      },
+                      "BTNARCHIVELIST": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_340",
+                        "codeName": "BTNARCHIVELIST",
+                        "label": "Archive ToDo List",
+                        "cssClass": "btn-large btn-danger",
+                        "iconClass": "",
+                        "tooltip": ""
+                      },
+                      "BTNCLOSELIST": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_33",
+                        "codeName": "BTNCLOSELIST",
+                        "label": "Close ToDo List",
+                        "cssClass": "btn-large btn-danger",
+                        "iconClass": "",
+                        "tooltip": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

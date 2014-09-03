@@ -1,0 +1,71 @@
+{
+  "@class": "pl.bpm4cloud.process.domain.ProcessDef",
+  "codeName": "SDContentPane_30",
+  "version": "1.0",
+  "modelCreationStrategy": "INIT",
+  "startNode": "EDIT",
+  "startRoles": "ROLE_ANONYMOUS, ROLE_USER",
+  "bb": {
+    "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+    "x": 100,
+    "y": 100
+  },
+  "swimlanes": [
+    {
+      "@class": "pl.bpm4cloud.process.domain.SwimlaneDef",
+      "name": "user",
+      "roles": "ROLE_USER, ROLE_ANONYMOUS"
+    }
+  ],
+  "nodes": [
+    {
+      "@class": "pl.bpm4cloud.process.domain.TaskNodeDef",
+      "name": "EDIT",
+      "defaultForm": "TODOFRM",
+      "swimlane": "user",
+      "label": "EDIT",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 211,
+        "y": 110
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toARCHIVED",
+          "to": "ARCHIVED"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.TaskNodeDef",
+      "name": "ARCHIVED",
+      "defaultForm": "TODOFRM",
+      "swimlane": "user",
+      "label": "ARCHIVED",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 427,
+        "y": 113
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toEND",
+          "to": "END"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.EndNodeDef",
+      "name": "END",
+      "defaultForm": "TODOFRM",
+      "swimlane": "user",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 680.9850810769686,
+        "y": 119.46875
+      }
+    }
+  ]
+}
